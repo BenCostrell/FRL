@@ -23,12 +23,6 @@ public class GridTile : MonoBehaviour
     {
         
     }
-
-    public void PlaceObject(GridObject gridObject)
-    {
-        gridObjects.Add(gridObject);
-        gridObject.PlaceOnTile(this);
-    }
 }
 
 public struct Coord

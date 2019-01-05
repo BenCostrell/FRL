@@ -14,16 +14,28 @@ public class MainSceneManager : MonoBehaviour
     [SerializeField]
     private CameraController cameraController;
 
+    public List<GridObject> gridObjects;
+
     void Start()
     {
+        Services.mainSceneManager = this;
+        gridObjects = new List<GridObject>();
         gridManager.InitGrid();
         player = Instantiate(playerPrefab);
-        gridManager.grid[3, 4].PlaceObject(player);
+        player.Init(gridManager.grid[3, 4]);
         cameraController.InitCamera(player);
     }
 
     void Update()
     {
         
+    }
+
+    public void Tick()
+    {
+        foreach(GridObject gridObject in gridObjects)
+        {
+            gridObject.OnTick();
+        }
     }
 }
