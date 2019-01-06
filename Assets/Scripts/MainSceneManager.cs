@@ -22,7 +22,7 @@ public class MainSceneManager : MonoBehaviour
         gridObjects = new List<GridObject>();
         gridManager.InitGrid();
         player = Instantiate(playerPrefab);
-        player.Init(gridManager.grid[3, 4]);
+        player.Init(gridManager.grid[gridManager.width/2, gridManager.height/2]);
         cameraController.InitCamera(player);
     }
 

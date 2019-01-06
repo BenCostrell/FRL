@@ -18,7 +18,7 @@ public class CameraController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (player) TrackPlayer();
+        //if (player) TrackPlayer();
     }
 
     private void TrackPlayer()

@@ -7,8 +7,7 @@ public class GridManager : MonoBehaviour
 {
     public GridTile tilePrefab;
     public Plant plantPrefab;
-    [SerializeField]
-    private int width, height;
+    public int width, height;
     public GridTile[,] grid { get; private set; }
 
     public void InitGrid()

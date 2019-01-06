@@ -145,8 +145,8 @@ MonoBehaviour:
     type: 3}
   plantPrefab: {fileID: 2060375598537307061, guid: a9b518aa73ec5e344bb2692bd6c0e74c,
     type: 3}
-  width: 10
-  height: 8
+  width: 17
+  height: 9
 --- !u!4 &71318517
 Transform:
   m_ObjectHideFlags: 0
@@ -328,7 +328,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aaf9622a3fb86614fa7054ba21364084, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerPrefab: {fileID: 1428146155961917169, guid: bd40bb5a4fffeaa48a22829351a27075,
+  playerPrefab: {fileID: 3871888865148231334, guid: bd40bb5a4fffeaa48a22829351a27075,
     type: 3}
   gridManager: {fileID: 71318516}
   cameraController: {fileID: 519420030}
